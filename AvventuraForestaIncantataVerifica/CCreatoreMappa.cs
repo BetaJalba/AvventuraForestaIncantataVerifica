@@ -25,7 +25,7 @@ namespace AvventuraForestaIncantataVerifica
         {
             for (int i = 0; i < mappa.Length; i++) 
             {
-                if (i > 0 && i + 1 % 7 == 0)
+                if (i > 0 && (i + 1) % 7 == 0)
                     mappa[i] = new CCasellaMagica();
                 else if (i == 12)
                     mappa[i] = new CCasellaRagnatela();
