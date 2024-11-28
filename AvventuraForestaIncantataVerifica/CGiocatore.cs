@@ -32,7 +32,7 @@ namespace AvventuraForestaIncantataVerifica
             {
                 mappa[i].OnEffetto += (sender, e) =>
                 {
-                    if (sender is CCasellaRagnatela & e.Casella == mappaIndex && mappaIndex != oldMappaIndex) 
+                    if (sender is CCasellaRagnatela && e.Casella == mappaIndex && mappaIndex != oldMappaIndex) 
                     {
                         effetto = 0;
                         saltaTurno();
